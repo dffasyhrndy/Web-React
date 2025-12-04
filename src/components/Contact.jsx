@@ -51,7 +51,7 @@ export default function Contact(){
             <button className="btn ghost" type="button" onClick={()=>setForm({name:'',email:'',message:''})}>Reset</button>
           </div>
         </form>}
-        <p style={{marginTop:12,color:'var(--muted)'}}>Or email me at <a href="mailto:ran@example.com" style={{color:'var(--accent-start)'}}>ran@example.com</a></p>
+        <p style={{marginTop:12,color:'var(--muted)'}}>Or email me at <a href="mailto:ran@example.com" style={{color:'var(--accent-start)'}}>Contact Me!</a></p>
       </div>
     </section>
   );
