@@ -1,0 +1,17 @@
+:root {
+  --bg: linear-gradient(135deg, #d0e7ff, #9bcaff);
+  --text: #0a0a0a;
+  --card-bg: #ffffffcc;
+}
+
+.dark {
+  --bg: linear-gradient(135deg, #1a0033, #4b008a);
+  --text: #f2eaff;
+  --card-bg: #ffffff13;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+}

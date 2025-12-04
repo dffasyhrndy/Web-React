@@ -1,0 +1,75 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.app.dark .navbar {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+}
+
+.nav-logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.nav-links a {
+  margin-left: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.lang-btn, .theme-btn, .mobile-menu-btn {
+  border: none;
+  background: var(--card);
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Mobile only visible */
+.mobile-menu-btn {
+  display: none;
+}
+
+/* Mobile Menu Drawer */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: var(--card);
+  backdrop-filter: blur(10px);
+}
+
+.mobile-menu a {
+  margin-bottom: 15px;
+  color: var(--text);
+}
+
+/* Responsive */
+@media(max-width: 800px) {
+  .desktop-only {
+    display: none;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+}
